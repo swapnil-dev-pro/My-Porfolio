@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import Tilt from "react-parallax-tilt";
+import myPhoto from "/public/projects/MyPhoto.png";
 
 export const HeroSection = () => {
   return (
@@ -30,8 +31,7 @@ export const HeroSection = () => {
 
           <Tilt className="absolute top-55 left-22">
             <img
-              src="/public/projects/MyPhoto.png"
-              alt="Swapnil Rodrick"
+               src={myPhoto} alt="Me" 
               className="w-55 h-60 md:w-80 md:h-100 rounded-xl object-cover shadow-4xl"
             />
           </Tilt>
