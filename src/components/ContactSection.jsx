@@ -1,4 +1,5 @@
 import {
+  Facebook,
   Instagram,
   Linkedin,
   Mail,
@@ -11,6 +12,8 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+import emailjs from "emailjs-com";
+
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -20,6 +23,25 @@ export const ContactSection = () => {
     e.preventDefault();
 
     setIsSubmitting(true);
+     emailjs
+      .sendForm(
+        "01825777314",   // from EmailJS
+        "template_9d5sp6d",  // from EmailJS
+        e.target,
+        "H0PqXYL49xynX0bB6"    // from EmailJS
+      )
+      .then(
+        () => {
+          alert("Message sent successfully!");
+          setIsSubmitting(false);
+          e.target.reset(); // clear form
+        },
+        (error) => {
+          alert("Failed to send message. Please try again.");
+          console.error(error);
+          setIsSubmitting(false);
+        }
+      );
 
     setTimeout(() => {
       toast({
@@ -36,7 +58,7 @@ export const ContactSection = () => {
           Get In <span className="text-primary"> Touch</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-xl font-normal">
           Have a project in mind or want to collaborate? Feel free to reach out.
           I'm always open to discussing new opportunities.
         </p>
@@ -56,10 +78,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Email</h4>
                   <a
-                    href="mailto:hello@gmail.com"
+                    href="mailto:albinswapnil@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    hello@gmail.com
+                    albinswapnil@gmail.com
                   </a>
                 </div>
               </div>
@@ -70,10 +92,10 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Phone</h4>
                   <a
-                    href="tel:+11234567890"
+                    href="tel:01825777314"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    01825777314
                   </a>
                 </div>
               </div>
@@ -84,7 +106,7 @@ export const ContactSection = () => {
                 <div>
                   <h4 className="font-medium"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Vancouver, BC, Canada
+                    Bangladesh,Dhaka,Nawabganj
                   </a>
                 </div>
               </div>
@@ -92,17 +114,17 @@ export const ContactSection = () => {
 
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
-              <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
-                  <Linkedin />
+              <div className="flex space-x-4 justify-center ">
+                <a className="hover:text-primary duration-300" href="#" target="_blank">
+                  <Linkedin/>
                 </a>
-                <a href="#" target="_blank">
-                  <Twitter />
+                <a className="hover:text-primary duration-300" href="https://www.facebook.com/albinswapnil.rodrick/" target="_blank">
+                  <Facebook />
                 </a>
-                <a href="#" target="_blank">
+                <a className="hover:text-primary duration-300" href="https://www.instagram.com/swapnilrd007/" target="_blank">
                   <Instagram />
                 </a>
-                <a href="#" target="_blank">
+                <a className="hover:text-primary duration-300" href="#" target="_blank">
                   <Twitch />
                 </a>
               </div>
@@ -130,7 +152,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Pedro Machado..."
+                  placeholder="Albin Swapnil..."
                 />
               </div>
 
@@ -148,7 +170,7 @@ export const ContactSection = () => {
                   name="email"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="john@gmail.com"
+                  placeholder="albinswapnil@gmail.com"
                 />
               </div>
 

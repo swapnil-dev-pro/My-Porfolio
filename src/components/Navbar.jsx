@@ -23,6 +23,7 @@ export const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
+    <>
     <nav
       className={cn(
         "fixed w-full z-40 transition-all duration-300",
@@ -46,7 +47,7 @@ export const Navbar = () => {
             <a
               key={key}
               href={item.href}
-              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+              className="font-bold text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
             </a>
@@ -72,7 +73,7 @@ export const Navbar = () => {
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8 text-xl">
+          <div className="flex flex-col space-y-8 text-xl ">
             {navItems.map((item, key) => (
               <a
                 key={key}
@@ -87,5 +88,6 @@ export const Navbar = () => {
         </div>
       </div>
     </nav>
+    </>
   );
 };

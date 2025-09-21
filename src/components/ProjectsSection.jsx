@@ -12,13 +12,15 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "3D Robot Porfolio ",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "“A fully responsive interactive robot feature built with React, Tailwind CSS, and Spline.",
+
+    // "Interactive analytics dashboard with data visualization and filtering capabilities.",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Spline", "Tailwind css"],
+    demoUrl: "https://3d-robot-phi.vercel.app/",
+    githubUrl: "https://github.com/swapnil-dev-pro/3d-Robot.git",
   },
   {
     id: 3,
@@ -26,9 +28,9 @@ const projects = [
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["React", "Redux", "Tailwind css"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/swapnil-dev-pro/Final-api.git",
   },
 ];
 
@@ -41,7 +43,7 @@ export const ProjectsSection = () => {
           Featured <span className="text-primary"> Projects </span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto text-xl font-normal">
           Here are some of my recent projects. Each project was carefully
           crafted with attention to detail, performance, and user experience.
         </p>
@@ -100,7 +102,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/swapnil-dev-pro"
           >
             Check My Github <ArrowRight size={16} />
           </a>
