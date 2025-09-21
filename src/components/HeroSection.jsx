@@ -29,12 +29,14 @@ export const HeroSection = () => {
             performance-driven code.”
           </p>
 
-          <Tilt className="absolute top-55 left-22">
+        <div className="relative">
+            <Tilt className="absolute top-[-300px] left-[-400px]">
             <img
                src={myPhoto} alt="Me" 
               className="w-55 h-60 md:w-80 md:h-100 rounded-xl object-cover shadow-4xl"
             />
           </Tilt>
+        </div>
           <a href="#projects" className="cosmic-button">
             View My Work
           </a>
