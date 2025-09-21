@@ -30,7 +30,7 @@ export const HeroSection = () => {
 
           <Tilt className="absolute top-55 left-22">
             <img
-              src="/public/projects/MyPhoto.jpg"
+              src="/public/projects/MyPhoto.png"
               alt="Swapnil Rodrick"
               className="w-55 h-60 md:w-80 md:h-100 rounded-xl object-cover shadow-4xl"
             />
