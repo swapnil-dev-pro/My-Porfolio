@@ -3,18 +3,18 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 50, category: "frontend" },
+  { name: "HTML/CSS", level: 60, category: "frontend" },
+  { name: "JavaScript", level: 25, category: "frontend" },
+  { name: "React", level: 30, category: "frontend" },
+  { name: "Tailwind CSS", level: 45, category: "frontend" },
+  { name: "Next.js", level: 30, category: "frontend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Varcel", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
-  { name: "Photoshop", level: 70, category: "tools" },
+  { name: "Git/GitHub", level: 40, category: "tools" },
+  { name: "Varcel", level: 30, category: "tools" },
+  { name: "Figma", level: 50, category: "tools" },
+  { name: "VS Code", level: 50, category: "tools" },
+  { name: "Photoshop", level: 30, category: "tools" },
   // Backend
   { name: "Upcoming", level: 100, category: "backend" },
   { name: "Upcoming", level: 100, category: "backend" },
