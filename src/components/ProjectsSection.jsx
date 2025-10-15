@@ -3,12 +3,13 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "3D-HeadPhone Ecommerce Website",
+    description:
+      "GSAP ScrollTrigger Website Animation,Setting up GSAP,Setting up GSAP, ScrollTrigger & ScrollSm,Responsive animations with matchMedia,Moving elements between sections on scrolloother",
+    image: "/public/projects/project1 (2).png",
+    tags: ["GSAP", "CSS", "JavaScript"],
+    demoUrl: "https://3-d-headphone-app.vercel.app",
+    githubUrl: "https://github.com/swapnil-dev-pro",
   },
   {
     id: 2,
