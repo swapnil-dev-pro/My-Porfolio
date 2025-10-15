@@ -6,7 +6,7 @@ const projects = [
     title: "3D-HeadPhone Ecommerce Website",
     description:
       "GSAP ScrollTrigger Website Animation,Setting up GSAP,Setting up GSAP, ScrollTrigger & ScrollSm,Responsive animations with matchMedia,Moving elements between sections on scrolloother",
-    image: "/public/projects/project1.png",
+    image: "/projects/project1.png",
     tags: ["GSAP", "CSS", "JavaScript"],
     demoUrl: "https://3-d-headphone-app.vercel.app",
     githubUrl: "https://github.com/swapnil-dev-pro",
@@ -18,7 +18,7 @@ const projects = [
       "“A fully responsive interactive robot feature built with React, Tailwind CSS, and Spline.",
 
     // "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/public/projects/project2.png",
+    image: "/projects/project2.png",
     tags: ["React", "Spline", "Tailwind css"],
     demoUrl: "https://3d-robot-phi.vercel.app/",
     githubUrl: "https://github.com/swapnil-dev-pro/3d-Robot.git",
@@ -28,7 +28,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/public/projects/project3.png",
+    image:"/projects/project3.png",
     tags: ["React", "Redux", "Tailwind css"],
     demoUrl: "#",
     githubUrl: "https://github.com/swapnil-dev-pro/Final-api.git",
