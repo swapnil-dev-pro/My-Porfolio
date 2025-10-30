@@ -13,15 +13,15 @@ const projects = [
   },
   {
     id: 2,
-    title: "3D Robot Porfolio ",
+    title: "A Fully Responsive Travel Agency Website built using Next.js, Tailwind CSS, and shadcn/ui. ✈️ ",
     description:
-      "“A fully responsive interactive robot feature built with React, Tailwind CSS, and Spline.",
+      "“This modern website features a clean and intuitive user interface, designed to provide an exceptional user experience across all vices. ",
 
     // "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["React", "Spline", "Tailwind css"],
-    demoUrl: "https://3d-robot-phi.vercel.app/",
-    githubUrl: "https://github.com/swapnil-dev-pro/3d-Robot.git",
+    image: "/projects/project2 (2).png",
+    tags: ["Next.js", "Tailwind css", "shadcn/ui","Lucide Icons"],
+    demoUrl: "https://gozayra-agency-7gm1.vercel.app",
+    githubUrl: "https://github.com/swapnil-dev-pro/Gozayra-Agency",
   },
   {
     id: 3,
@@ -30,8 +30,8 @@ const projects = [
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image:"/projects/project3.png",
     tags: ["React", "Redux", "Tailwind css"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/swapnil-dev-pro/Final-api.git",
+    demoUrl: "https://orebi-nu-six.vercel.app/",
+    githubUrl: "https://github.com/swapnil-dev-pro/Orebi",
   },
 ];
 

@@ -14,7 +14,6 @@ import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import emailjs from "emailjs-com";
 
-
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -23,12 +22,12 @@ export const ContactSection = () => {
     e.preventDefault();
 
     setIsSubmitting(true);
-     emailjs
+    emailjs
       .sendForm(
-        "01825777314",   // from EmailJS
-        "template_9d5sp6d",  // from EmailJS
+        "01825777314", // from EmailJS
+        "template_9d5sp6d", // from EmailJS
         e.target,
-        "H0PqXYL49xynX0bB6"    // from EmailJS
+        "H0PqXYL49xynX0bB6" // from EmailJS
       )
       .then(
         () => {
@@ -115,16 +114,32 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center ">
-                <a className="hover:text-primary duration-300" href="#" target="_blank">
-                  <Linkedin/>
+                <a
+                  className="hover:text-primary duration-300"
+                  href="https://www.linkedin.com/in/albin-swapnil-67a525378/"
+                  target="_blank"
+                >
+                  <Linkedin />
                 </a>
-                <a className="hover:text-primary duration-300" href="https://www.facebook.com/albinswapnil.rodrick/" target="_blank">
+                <a
+                  className="hover:text-primary duration-300"
+                  href="https://www.facebook.com/albinswapnil.rodrick/"
+                  target="_blank"
+                >
                   <Facebook />
                 </a>
-                <a className="hover:text-primary duration-300" href="https://www.instagram.com/swapnilrd007/" target="_blank">
+                <a
+                  className="hover:text-primary duration-300"
+                  href="https://www.instagram.com/swapnilrd007/"
+                  target="_blank"
+                >
                   <Instagram />
                 </a>
-                <a className="hover:text-primary duration-300" href="#" target="_blank">
+                <a
+                  className="hover:text-primary duration-300"
+                  href="#"
+                  target="_blank"
+                >
                   <Twitch />
                 </a>
               </div>
