@@ -25,13 +25,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: " Restaurant landing page built with Next.js, TailwindCSS, and shedcn.",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image:"/projects/project3.png",
-    tags: ["React", "Redux", "Tailwind css"],
-    demoUrl: "https://orebi-nu-six.vercel.app/",
-    githubUrl: "https://github.com/swapnil-dev-pro/Orebi",
+      "Perfectly designed for restaurants wanting to showcase their menu, story, and style while making it easy for customers to explore and make reservations.ssing.",
+    image:"/projects/project3 (2).png",
+    tags: ["Next.js", "Redux", "Tailwind css","shadcn/ui."],
+    demoUrl: "https://swapnil-resturent.vercel.app",
+    githubUrl: "https://github.com/swapnil-dev-pro/Swapnil-Resturent",
   },
 ];
 
