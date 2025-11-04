@@ -1,3 +1,4 @@
+
 import {
   Facebook,
   Instagram,
@@ -69,13 +70,13 @@ export const ContactSection = () => {
               Contact Information
             </h3>
 
-            <div className="space-y-6 justify-center">
+            <div className="space-y-6 justify-center md:ml-[50px] lg:ml-[100px]">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Email</h4>
+                  <h4 className="font-medium mr-[80px]"> Email</h4>
                   <a
                     href="mailto:albinswapnil@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -103,7 +104,7 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <h4 className="font-medium"> Location</h4>
+                  <h4 className="font-medium mr-[110px]"> Location</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
                     Bangladesh,Dhaka,Nawabganj
                   </a>

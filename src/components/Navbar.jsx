@@ -1,3 +1,4 @@
+
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
@@ -16,78 +17,80 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
-    <>
     <nav
       className={cn(
-        "fixed w-full z-40 transition-all duration-300",
-        isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
+        "fixed top-0 left-0 w-full z-50 transition-all duration-500",
+        isScrolled
+          ? "bg-gradient-to-r from-background/80 via-background/70 to-background/80 backdrop-blur-lg border-b border-border/40 shadow-md"
+          : "bg-transparent"
       )}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between py-4">
+        {/* === Logo === */}
         <a
-          className="text-xl font-bold text-primary flex items-center"
           href="#hero"
+          className="text-2xl font-bold flex items-center text-foreground hover:text-primary transition-colors duration-300"
         >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground"> Swapnil-Dev </span>{" "}
-            Portfolio
+          <span className="relative">
+            <span className="text-glow text-primary">Swapnil</span>
+            <span className="opacity-70">-Dev</span> ⚡
           </span>
         </a>
 
-        {/* desktop nav */}
+        {/* === Desktop Menu === */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
-              className="font-bold text-foreground/80 hover:text-primary transition-colors duration-300"
+              className={cn(
+                "font-medium tracking-wide text-foreground/80 hover:text-primary transition-colors duration-300",
+                "relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:left-0 after:bottom-[-4px] after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+              )}
             >
               {item.name}
             </a>
           ))}
         </div>
 
-        {/* mobile nav */}
-
+        {/* === Mobile Button === */}
         <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden p-2 text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+          {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
 
+        {/* === Mobile Menu === */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
-            "transition-all duration-300 md:hidden",
+            "fixed inset-0 bg-gradient-to-b from-background/95 to-background/90 backdrop-blur-lg z-40 flex flex-col items-center justify-center space-y-10 text-xl font-semibold transition-all duration-500 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           )}
         >
-          <div className="flex flex-col space-y-8 text-xl ">
-            {navItems.map((item, key) => (
-              <a
-                key={key}
-                href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
+          {navItems.map((item, key) => (
+            <a
+              key={key}
+              href={item.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="text-foreground/80 hover:text-primary transition-colors duration-300"
+            >
+              {item.name}
+            </a>
+          ))}
         </div>
       </div>
     </nav>
-    </>
   );
 };
