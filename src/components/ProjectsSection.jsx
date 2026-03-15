@@ -3,13 +3,13 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "3D-HeadPhone Ecommerce Website",
+    title: "Newzeland Renovation Company Website",
     description:
-      "GSAP ScrollTrigger Website Animation,Setting up GSAP,Setting up GSAP, ScrollTrigger & ScrollSm,Responsive animations with matchMedia,Moving elements between sections on scrolloother",
-    image: "/projects/project1.png",
-    tags: ["GSAP", "CSS", "JavaScript"],
-    demoUrl: "https://3-d-headphone-app.vercel.app",
-    githubUrl: "https://github.com/swapnil-dev-pro",
+      "The website of RNZ Renovation Ltd features a clean and simple layout that clearly presents renovation services, project work, and contact information. It provides an easy navigation experience and loads quickly due to its lightweight design. While it focuses on functionality rather than advanced animations like GSAP or GSAP ScrollTrigger, the website effectively delivers essential information and maintains a professional online presence.oother",
+    image: "/public/projects/project1 (2).png",
+    tags: ["PHP", "CSS", "JavaScript",],
+    demoUrl: "https://rnzrenovationltd.co.nz/",
+    githubUrl: "https://github.com/swapnil-dev-pro/R-Z",
   },
   {
     id: 2,
