@@ -6,7 +6,7 @@ const projects = [
     title: "Newzeland Renovation Company Website",
     description:
       "The website of RNZ Renovation Ltd features a clean and simple layout that clearly presents renovation services, project work, and contact information. It provides an easy navigation experience and loads quickly due to its lightweight design. While it focuses on functionality rather than advanced animations like GSAP or GSAP ScrollTrigger, the website effectively delivers essential information and maintains a professional online presence.oother",
-    image: "/public/projects/project1 (2).png",
+    image: "/projects/project1-2.png",
     tags: ["PHP", "CSS", "JavaScript",],
     demoUrl: "https://rnzrenovationltd.co.nz/",
     githubUrl: "https://github.com/swapnil-dev-pro/R-Z",
