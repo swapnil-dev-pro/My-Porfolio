@@ -1,4 +1,3 @@
-
 import {
   Facebook,
   Instagram,
@@ -21,36 +20,34 @@ export const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setIsSubmitting(true);
+
     emailjs
       .sendForm(
-        "01825777314", // from EmailJS
-        "template_9d5sp6d", // from EmailJS
+        "service_abc123", // Your real Service ID
+        "template_9d5sp6d", // Your Template ID
         e.target,
-        "H0PqXYL49xynX0bB6" // from EmailJS
+        "jzFlrDNfZYYvteZdK", // Your Public Key
       )
-      .then(
-        () => {
-          alert("Message sent successfully!");
-          setIsSubmitting(false);
-          e.target.reset(); // clear form
-        },
-        (error) => {
-          alert("Failed to send message. Please try again.");
-          console.error(error);
-          setIsSubmitting(false);
-        }
-      );
-
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+      .then(() => {
+        toast({
+          title: "Message sent!",
+          description: "Thank you! I'll get back to you soon.",
+        });
+        e.target.reset();
+      })
+      .catch((error) => {
+        toast({
+          title: "Error!",
+          description: "Failed to send message.",
+        });
+        console.error(error);
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-      setIsSubmitting(false);
-    }, 1500);
   };
+
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -67,13 +64,13 @@ export const ContactSection = () => {
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6">
               {" "}
-              Contact Information
+              Contact Information{" "}
             </h3>
 
             <div className="space-y-6 justify-center md:ml-[50px] lg:ml-[100px]">
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Mail className="h-6 w-6 text-primary" />{" "}
+                  <Mail className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-medium mr-[80px]"> Email</h4>
@@ -87,7 +84,7 @@ export const ContactSection = () => {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Phone className="h-6 w-6 text-primary" />{" "}
+                  <Phone className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-medium"> Phone</h4>
@@ -101,7 +98,7 @@ export const ContactSection = () => {
               </div>
               <div className="flex items-start space-x-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <MapPin className="h-6 w-6 text-primary" />{" "}
+                  <MapPin className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-medium mr-[110px]"> Location</h4>
@@ -119,6 +116,7 @@ export const ContactSection = () => {
                   className="hover:text-primary duration-300"
                   href="https://www.linkedin.com/in/albin-swapnil-67a525378/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Linkedin />
                 </a>
@@ -126,6 +124,7 @@ export const ContactSection = () => {
                   className="hover:text-primary duration-300"
                   href="https://www.facebook.com/albinswapnil.rodrick/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Facebook />
                 </a>
@@ -133,6 +132,7 @@ export const ContactSection = () => {
                   className="hover:text-primary duration-300"
                   href="https://www.instagram.com/swapnilrd007/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Instagram />
                 </a>
@@ -140,6 +140,7 @@ export const ContactSection = () => {
                   className="hover:text-primary duration-300"
                   href="#"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <Twitch />
                 </a>
@@ -147,62 +148,54 @@ export const ContactSection = () => {
             </div>
           </div>
 
-          <div
-           className="bg-card p-8 rounded-lg shadow-xs">
-            
-          
+          <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium mb-2"
-                >
-                  {" "}
+                <label htmlFor="kau" className="block text-sm font-medium mb-2">
                   Your Name
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
+                  id="kau"
+                  name="kau"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="Albin Swapnil..."
                 />
               </div>
 
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="kauEmail"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Email
                 </label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
+                  id="kauEmail"
+                  name="kauEmail"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary"
                   placeholder="albinswapnil@gmail.com"
                 />
               </div>
 
               <div>
                 <label
-                  htmlFor="message"
+                  htmlFor="kauMessage"
                   className="block text-sm font-medium mb-2"
                 >
-                  {" "}
                   Your Message
                 </label>
                 <textarea
-                  id="message"
-                  name="message"
+                  id="kauMessage"
+                  name="kauMessage"
                   required
-                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary resize-none"
+                  rows={5}
+                  className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none"
                   placeholder="Hello, I'd like to talk about..."
                 />
               </div>
@@ -211,7 +204,7 @@ export const ContactSection = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2",
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
