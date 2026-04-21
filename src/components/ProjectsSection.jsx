@@ -13,15 +13,15 @@ const projects = [
   },
   {
     id: 2,
-    title: "A Fully Responsive Travel Agency Website built using Next.js, Tailwind CSS, and shadcn/ui. ✈️ ",
+    title: "Built a modern and fully responsive Agency Website using React.  ✈️ ",
     description:
-      "“This modern website features a clean and intuitive user interface, designed to provide an exceptional user experience across all vices. ",
+      "“Focused on clean UI, user-friendly experience, and SEO optimization. Includes all essential features for a professional agency with smooth performance across all devices.This modern website features a clean and intuitive user interface, designed to provide an exceptional user experience across all vices. ",
 
     // "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2 (2).png",
-    tags: ["Next.js", "Tailwind css", "shadcn/ui","Lucide Icons"],
-    demoUrl: "https://gozayra-agency-7gm1.vercel.app",
-    githubUrl: "https://github.com/swapnil-dev-pro/Gozayra-Agency",
+    image: "/projects/projects 2.png",
+    tags: ["React.js", "Tailwind css", "shadcn/ui","Lucide Icons"],
+    demoUrl: "https://gozyraa.vercel.app/",
+    githubUrl: "https://github.com/swapnil-dev-pro/Gozyraa",
   },
   {
     id: 3,
