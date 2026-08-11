@@ -34,15 +34,15 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Restaurant Landing Page",
-    titleBn: "রেস্টুরেন্ট ল্যান্ডিং পেজ",
+    title: "SaaS Analytics Dashboard",
+    titleBn: "স্যাস অ্যানালিটিক্স ড্যাশবোর্ড",
     description:
-      "Restaurant landing page built with Next.js, TailwindCSS, and shadcn — showcasing menu, story, and style while making reservations easy for customers.",
+     "A responsive admin dashboard built with Next.js and TypeScript, featuring dynamic charts, sortable data tables, sidebar navigation, and interactive settings — showcasing type-safe component architecture and file-based routing.",
     descriptionBn:
-      "Next.js, TailwindCSS এবং shadcn দিয়ে তৈরি রেস্টুরেন্ট ল্যান্ডিং পেজ — মেনু, স্টোরি ও স্টাইল প্রদর্শনের পাশাপাশি কাস্টমারদের জন্য রিজার্ভেশন সহজ করে তোলে।",
+     "Next.js এবং TypeScript দিয়ে বানানো একটি রেসপনসিভ অ্যাডমিন ড্যাশবোর্ড, যেখানে আছে ডাইনামিক চার্ট, সর্টেবল ডেটা টেবিল, সাইডবার নেভিগেশন এবং ইন্টারঅ্যাক্টিভ সেটিংস — টাইপ-সেফ কম্পোনেন্ট আর্কিটেকচার ও ফাইল-বেসড রাউটিং সহ।",
     image: "/projects/project3 (2).png",
-    tags: ["Next.js", "Redux", "Tailwind CSS", "shadcn/ui"],
-    demoUrl: "https://swapnil-resturent.vercel.app",
-    githubUrl: "https://github.com/swapnil-dev-pro/Swapnil-Resturent",
+    tags: ["Next.js", "TypeScript", "React", "Recharts", "CSS","Lucide Icons"],
+    demoUrl: "https://dashboard-nextjs-typescript.vercel.app",
+    githubUrl: "https://github.com/swapnil-dev-pro/dashboard-nextjs-typescript",
   },
 ];
