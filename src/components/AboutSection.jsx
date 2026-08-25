@@ -34,7 +34,7 @@ export const AboutSection = () => {
                 {t("about.getInTouch")}
               </a>
               <a
-                href="/projects/Swapni.pdf"
+                href="/projects/Albin_Swapnil_Rodrick_CV.pdf"
                 target="_blank"
                 download="My-CV.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
