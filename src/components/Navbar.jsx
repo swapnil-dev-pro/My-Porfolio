@@ -11,14 +11,15 @@ export const Navbar = () => {
   const { t } = useLanguage();
 
   const navItems = [
-    { name: t("nav.home"), href: "#hero" },
-    { name: t("nav.about"), href: "#about" },
-    { name: t("nav.skills"), href: "#skills" },
-    { name: t("nav.journey"), href: "#timeline" },
-    { name: t("nav.projects"), href: "#projects" },
-    { name: t("nav.github"), href: "#github" },
-    { name: t("nav.contact"), href: "#contact" },
-  ];
+  { name: t("nav.home"), href: "#hero" },
+  { name: t("nav.about"), href: "#about" },
+  { name: t("nav.skills"), href: "#skills" },
+  { name: t("nav.journey"), href: "#timeline" },
+  { name: t("nav.projects"), href: "#projects" },
+  { name: "SEO & Marketing", href: "#digital-marketing" },
+  { name: t("nav.github"), href: "#github" },
+  { name: t("nav.contact"), href: "#contact" },
+];
 
   useEffect(() => {
     const handleScroll = () => {

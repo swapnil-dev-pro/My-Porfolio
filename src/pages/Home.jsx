@@ -6,10 +6,12 @@ import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { TimelineSection } from "../components/TimelineSection";
 import { ProjectsSection } from "../components/ProjectsSection";
+import { DigitalMarketingSection } from "../components/DigitalMarketingSection";
 import { GithubStatsSection } from "../components/GithubStatsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Footer } from "../components/Footer";
 import { VisitorBadge } from "@/components/VisitorBadge";
+
 
 export const Home = () => {
   return (
@@ -29,6 +31,7 @@ export const Home = () => {
         <TimelineSection />
         <ProjectsSection />
         <GithubStatsSection />
+        <DigitalMarketingSection />
         <ContactSection />
       </main>
 
